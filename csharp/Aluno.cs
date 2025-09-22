@@ -2,11 +2,11 @@
 
 public class Aluno
 {
-    int codigo;
-    string? nome;
-    double nota1;
-    double nota2;
-    double media;
+    public int codigo;
+    public string? nome;
+    public double nota1;
+    public double nota2;
+    public double media;
     public void CalcularMedia()
     { media = (nota1 + nota2) / 2; }
     public void Visualizar()

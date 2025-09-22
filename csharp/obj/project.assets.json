@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PC\\Documentos\\Rafael\\Projetos\\Atoa\\Cadastro-Alunos\\registro-de-alunos\\c#\\c#.csproj",
+      "projectUniqueName": "D:\\PC\\Documentos\\Rafael\\Projetos\\Atoa\\Cadastro-Alunos\\registro-de-alunos\\csharp\\c#.csproj",
       "projectName": "c#",
-      "projectPath": "D:\\PC\\Documentos\\Rafael\\Projetos\\Atoa\\Cadastro-Alunos\\registro-de-alunos\\c#\\c#.csproj",
+      "projectPath": "D:\\PC\\Documentos\\Rafael\\Projetos\\Atoa\\Cadastro-Alunos\\registro-de-alunos\\csharp\\c#.csproj",
       "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "D:\\PC\\Documentos\\Rafael\\Projetos\\Atoa\\Cadastro-Alunos\\registro-de-alunos\\c#\\obj\\",
+      "outputPath": "D:\\PC\\Documentos\\Rafael\\Projetos\\Atoa\\Cadastro-Alunos\\registro-de-alunos\\csharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config"

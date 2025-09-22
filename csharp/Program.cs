@@ -5,27 +5,34 @@ internal class Program
     private static void Main(string[] args)
     {
         List<Aluno> lista_alunos = new List<Aluno>();
+        int opcao = 0;
 
-        while (true)
+        while (opcao != 4)
         {
-            switch (Menu())
+            opcao = Menu();
+            switch (opcao)
             {
                 case 1:
                     Cadastrar(lista_alunos);
+                    break;
                 case 2:
                     Consultar(lista_alunos);
+                    break;
                 case 3:
                     VisualizarTodos(lista_alunos);
+                    break;
                 case 4:
                     break;
             }
         }
+
+        Console.WriteLine("Fim da execução");
     }
 
-    private static void Cadastrar(List lista)
+    private static void Cadastrar(List<Aluno> lista)
     {
         Aluno a = new Aluno();
-        a.codigo = lista.Length + 1;
+        a.codigo = lista.Count + 1;
         Console.Write("\nNome: ");
         a.nome = Console.ReadLine();
         Console.Write("Nota 1: ");
@@ -33,20 +40,23 @@ internal class Program
         Console.Write("Nota 2: ");
         a.nota2 = Convert.ToDouble(Console.ReadLine());
         a.CalcularMedia();
+
+        lista.Add(a);
     }
 
-    private static void Consultar(List lista)
+    private static void Consultar(List<Aluno> lista)
     {
+        string? nome = Console.ReadLine();
         foreach (Aluno a in lista)
         {
             Console.WriteLine("CONSULTAR ALUNO POR NOME");
             Console.Write("Digite o nome: ");
-            if (a.nome == Console.ReadLine())
+            if (a.nome == nome)
                 a.Visualizar();
         }
     }
 
-    private static void VisualizarTodos(List lista)
+    private static void VisualizarTodos(List<Aluno> lista)
     {
         foreach (Aluno a in lista)
             a.Visualizar();
