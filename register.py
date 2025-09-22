@@ -14,21 +14,35 @@ class Aluno:
 def Cadastrar(lista):
     a = Aluno()
     a.codigo = len(lista) + 1
-    a.nome = input("Nome: ")
+    a.nome = input("\nNome: ")
     a.nota1 = float(input("Nota 1: "))
     a.nota2 = float(input("Nota 2: "))
+    a.CalcularMedia()
 
-    lista.Append(a)
+    lista.append(a)
 
 def Consultar(lista):
-    pass
+    print("CONSULTAR ALUNO POR NOME\n")
+    nome = input("Digite o nome: ")
+    encontrado = False
+    print()
+
+    for i in range(len(lista)):
+        if lista[i].nome == nome:
+            lista[i].Visualizar()
+            encontrado = True
+
+    if encontrado == False:
+        print("Aluno não encontrado.")
 
 def VisualizarTodos(lista):
-    pass
+    for i in range(len(lista)):
+        print()
+        lista[i].Visualizar()
 
 def Menu():
     print("*MENU DE OPÇÕES*")
-    print("1 - Cadastrar aluno\n2 - Consultar aluno\n3 - Visualizar todos os alunos\n4 - Encerrar execução")
+    print("\n1 - Cadastrar aluno\n2 - Consultar aluno\n3 - Visualizar todos os alunos\n4 - Encerrar execução\n")
 
     return int(input("Digite a opção desejada: "))
 
@@ -36,6 +50,7 @@ def Main():
     lista_alunos = []
 
     while True:
+        print()
         match Menu():
             case 1:
                 Cadastrar(lista_alunos)
@@ -43,3 +58,9 @@ def Main():
                 Consultar(lista_alunos)
             case 3:
                 VisualizarTodos(lista_alunos)
+            case 4:
+                break
+
+Main()
+
+print("\nFim da execução.")

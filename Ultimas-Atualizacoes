@@ -1,4 +1,5 @@
 Últimas modificações:
 
-    1 - Criação do vetor "lista_alunos";
-    2 - Codificação da função "Cadastrar()";
+    1 - Codificação da função "VisualizarTodos()";
+    2 - Otimização das impressões no console;
+    3 - Codificação da função "Consultar()";
