@@ -1,0 +1,7 @@
+Últimas modificações:
+
+    1 - Codificação da função "Cadastrar()" em c#;
+    2 - Codificação da função "CalcularMedia()" em c#;
+    3 - Codificação da função "Visualizar()" em c#;
+    4 - Codificação da função "Consultar()" em c#;
+    5 - Codificação da função "VisualizarTodos()" em c#;

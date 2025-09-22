@@ -2,7 +2,7 @@
 
 internal class Program
 {
-    private static void Main()
+    private static void Main(string[] args)
     {
         List<Aluno> lista_alunos = new List<Aluno>();
 
@@ -16,14 +16,35 @@ internal class Program
         }
     }
 
-    private static void Cadastrar()
-    {}
+    private static void Cadastrar(List lista)
+    {
+        Aluno a = new Aluno();
+        a.codigo = lista.Length + 1;
+        Console.Write("\nNome: ");
+        a.nome = Console.ReadLine();
+        Console.Write("Nota 1: ");
+        a.nota1 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Nota 2: ");
+        a.nota2 = Convert.ToDouble(Console.ReadLine());
+        a.CalcularMedia();
+    }
 
-    private static void Consultar()
-    {}
+    private static void Consultar(List lista)
+    {
+        foreach (Aluno a in lista)
+        {
+            Console.WriteLine("CONSULTAR ALUNO POR NOME");
+            Console.Write("Digite o nome: ");
+            if (a.nome == Console.ReadLine())
+                a.Visualizar();
+        }
+    }
 
-    private static void VisualizarTodos()
-    {}
+    private static void VisualizarTodos(List lista)
+    {
+        foreach (Aluno a in lista)
+            a.Visualizar();
+    }
 
     private static int Menu()
     {
