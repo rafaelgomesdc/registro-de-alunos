@@ -1,5 +1,5 @@
 Últimas modificações:
 
-    1 - Codificação da função "VisualizarTodos()";
-    2 - Otimização das impressões no console;
-    3 - Codificação da função "Consultar()";
+    1 - Criação do arquivo em c#;
+    2 - Criação da classe em C#;
+    3 - Codificação da função "Menu()" em C#;
