@@ -10,6 +10,12 @@ internal class Program
         {
             switch (Menu())
             {
+                case 1:
+                    Cadastrar(lista_alunos);
+                case 2:
+                    Consultar(lista_alunos);
+                case 3:
+                    VisualizarTodos(lista_alunos);
                 case 4:
                     break;
             }
