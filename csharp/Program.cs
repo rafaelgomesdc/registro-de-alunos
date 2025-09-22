@@ -3,7 +3,27 @@
 internal class Program
 {
     private static void Main()
-    { }
+    {
+        List<Aluno> lista_alunos = new List<Aluno>();
+
+        while (true)
+        {
+            switch (Menu())
+            {
+                case 4:
+                    break;
+            }
+        }
+    }
+
+    private static void Cadastrar()
+    {}
+
+    private static void Consultar()
+    {}
+
+    private static void VisualizarTodos()
+    {}
 
     private static int Menu()
     {
