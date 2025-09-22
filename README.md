@@ -1,13 +1,13 @@
 #   Sistema de cadastro de alunos via terminal (Python e C#).
 >Objetivo: Estudo
-#    Resumo:
+##    Resumo:
 >O código original foi escrito em Python e reescrito em C#.
 >O sistema (em ambas as linguagens) permite o cadastro de alunos com as informações: nome, nota1 (primeira nota) e nota2 (segunda nota). Assim que um aluno é cadastrado é gerado um código (RA) com base na quantidade de alunos já cadastrado e armazena o valor automaticamente. A média é calculada e armazenada automaticamente.
 >O sistema também permite a consulta do aluno por nome, bem como a visualização de todos os alunos cadastrados.
 
-#   C#:
+##   C#:
 
->Conceitos abordados:
+### Conceitos abordados:
 1.  Estrutura de um programa em C#
 - Uso da classe Program com o método de entrada Main.
 - Definição de métodos auxiliares (Cadastrar, Consultar, VisualizarTodos, Menu) para organizar o código.
@@ -34,9 +34,9 @@
 7. Laço com condição de parada
 - Uso da variável opcao para controlar a execução do loop até que o valor 4 seja digitado.
 
-#   Python:
+##   Python:
 
->Conceitos abordados
+###  Conceitos abordados
 1. Programação orientada a objetos (POO)
 - Definição de uma classe (class Aluno).
 - Criação de atributos (variáveis de instância): codigo, nome, nota1, nota2, media.
